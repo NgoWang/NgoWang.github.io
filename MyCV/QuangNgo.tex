@@ -1,0 +1,282 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome}
+\usepackage[most]{tcolorbox}
+
+
+% Set the margins
+\geometry{left=0.85cm, top=0.8cm, right=0.85cm, bottom=0.2cm}
+
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \hspace{-3mm}{#1}:\hspace{1mm} & \hspace*{0pt}\hfill{\footnotesize{ #3}} \vspace{-0.5mm}\\ \hspace{-2.9mm}#2 
+    \end{tabular*}
+    \vspace{0mm}
+}
+
+\newcommand{\resumeExp}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} \small\textbf{#1} & {\footnotesize{#3}}\vspace{-1.2mm}\\
+        \hspace{-4.3mm} \footnotesize{\text{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-6.1mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} \small\textbf{#1} & {\footnotesize{#3}}\vspace{-1mm}\\
+        \hspace{-4.3mm} \footnotesize{\text{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-6.5mm}
+}
+
+\newcommand{\resumeEdu}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.3mm} \small\textbf{#1} & \footnotesize{#3}\vspace{-1mm} \\
+        \hspace{-4.3mm} \footnotesize{#2} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-3.2mm}
+}
+
+\newcommand{\resumeAchieve}[3]
+{
+\hspace{-3.1mm}\textbf{ #1} & {#2} & \hspace{3mm}\footnotesize{#3}
+\vspace{0mm}\\
+}
+
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm,itemsep=-2.5mm]}
+
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-1.5mm}}
+
+\renewcommand{\arraystretch}{1}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+
+\newcommand{\name}{Quang Ngo} % Your Name
+\newcommand{\course}{B.Tech -Computer Science} % Your Course
+\newcommand{\roll}{xxxxxxxx} % Your Roll No.
+\newcommand{\phone}{(325)320-2963} % Your Phone Number
+\newcommand{\emaila}{quanghmngo@gmail.com} %Email 1
+\newcommand{\github}{NgoWang} %Github
+\newcommand{\website}{https://ngowang.github.io} %Website
+\newcommand{\linkedin}{quang-ngo-27b232188} %linkedin
+
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+
+
+%----------HEADING-----------------
+\begin{center}
+    \LARGE{\textbf{\name}}
+\end{center}
+\vspace{-6.5mm}
+\begin{center}
+    \small{\href{https://github.com/\github}{\faGithub \hspace{0.2mm} github.com/NgoWang} |  \href{https://www.linkedin.com/in/\linkedin/}{\faLinkedinSquare \hspace{0.2mm} linkedin.com/in/quang-ngo-27b232188} | \href{mailto:\emaila}{\faSend \hspace{0.2mm} \emaila} | \faPhone \hspace{0.2mm} +1-\phone }
+\end{center}
+\vspace{-3mm}
+
+%-----------EDUCATION-----------------
+
+\vspace{-2.5mm}
+\section{Education}
+
+\resumeSubHeadingListStart
+\resumeEdu
+{The University of Akron} 
+{Bachelors of Science in Computer Science} 
+{Jan 2019 - May 2022} %Event Dates
+{GPA: 3.52/4.00} %Website
+\resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+\resumeEdu
+{The University of Akron} 
+{Masters of Science in Applied Mathematics} 
+{May 2022 - May 2023} %Event Dates
+{GPA: 4.00/4.00} %Website
+\resumeSubHeadingListEnd
+\vspace{-3.5mm}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeExp
+{The University of Akron}
+{Academic Tutor}
+{Aug 2018 - Aug 2021}
+{Akron, OH}
+\resumeItemListStart
+\item[$\bullet$] Assist students with Math, Computer Science, and Statistics.
+\resumeItemListEnd
+
+
+\resumeExp
+{Burdine-Anderson - quality inspection}
+{Aerospace Engineer, Internship}
+{May 2021 - July 2022}
+{Burdine, Kentucky}
+\resumeItemListStart
+\item[$\bullet$] Working on quality measurement/documentations, first article inspection reports, CMM operation, specification,
+engineering drawings and material certifications.
+\resumeItemListEnd
+
+\resumeExp
+{The University of Akron}
+{Research Assistant}
+{Aug 2021 - May 2022}
+{Akron, OH}
+\resumeItemListStart
+\item[$\bullet$]  Analyze XPCS data to see how the influence of silane coupling agents on filler network structure and stress-induced
+particle rearrangement in elastomer nanocomposites.
+\resumeItemListEnd
+
+\resumeExp
+{The University of Akron}
+{Graduate Assistantship}
+{July 2022 - May 2023}
+{Akron, OH}
+\resumeItemListStart
+\item[$\bullet$]  Instructing Calculus I, II, III.
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProject
+{SEIR Covid-19 Model}
+{Prof. Alexander P. Hoover,  The University of Akron} %Project Name, Location Name
+{Jan 2021 - July 2021} %Event Dates
+{\href{https://github.com/NgoWang/NgoWang/blob/main/Final\%20report.pdf}{git.io/Finalreport}} 
+\resumeItemListStart
+\item[$\bullet$] See the effect duration of Covid-19 and its impact on Summit County.
+\resumeItemListEnd
+
+
+\resumeProject
+{Web-driven Application} %Project Name
+{Ashok Tamang and Thadeus Hinkle, The University of Akron} %Project Name, Location Name
+{Aug 2021 - Dec 2021} %Event Dates
+{\href{https://github.com/MCRusher/DatabaseProject}{git.io/DatabaseProject}} 
+\resumeItemListStart
+\item[$\bullet$] Display Covid-19 Data and its variances, and show which country has the which highest Covid variance cases.
+\resumeItemListEnd
+
+\resumeProject
+{LiteCount} %Project Name
+{Douglas Rudy and Stephan Gunawardana, The University of Akron} %Project Name, Location Name
+{Jan 2022 - Apr 2022} %Event Dates
+{\href{https://litecount-5fba6.web.app/}{litecount-5fba6.web.app}} %Website
+\resumeItemListStart
+\item[$\bullet$] A lightweight inventory management system tailored to small businesses which will allow users and businesses to streamline inventory operations and integrate them within their current point of sale system.
+\resumeItemListEnd
+
+
+\resumeSubHeadingListEnd
+
+\vspace{-5.5mm}
+
+\section{Achievements}
+\vspace{0.2mm}
+\small{\begin{tabular*}{\textwidth}[t]{p{0.22\textwidth} p{0.64\textwidth}@{\extracolsep{\fill}}r}
+
+
+\resumeAchieve{Akron Guarantee Award}{Score ACT score higher than 20}{2018}
+
+\resumeAchieve{Dean Award}{GPA higher than 3.5}{2019-present}
+
+\resumeAchieve{Cum Laude}{GPA in range of 3.40 and 3.59}{2022}
+
+\end{tabular*}}
+
+\vspace{-2.5mm}
+
+
+\section{Technical Skills}
+\vspace{0.2mm}
+
+\small{\begin{tabular*}{\textwidth}[t]{p{0.5\textwidth} p{0.5\textwidth}}
+
+\hspace{-3.1mm}{\textbf{ Programming languages:} C++, C, Python, R} & {\textbf{Web Technologies:} HTML, CSS, Django, JavaScript} \\  
+\hspace{-3.1mm}{\textbf{ ML/AI:} Pytorch, Numpy, Pandas, Matplotlib, Tensorflow} & {\textbf{Miscellaneous:} MySQL, AWS, Git, Shell, \LaTeX, Unity3D}
+\end{tabular*}}
+
+\vspace{-2.5mm}
+\section{Relevant Coursework}
+\vspace{0.2mm}
+
+
+\small{\begin{tabular*}{\textwidth}[t]{p{\textwidth}}
+\hspace{-3.1mm}\textbf{ Computer Science: }{Data Structures and Algorithms, Databases Management, Operating Systems, Computer Systems}\\
+\hspace{-3.1mm}\textbf{ Mathematics: }{Advanced Numerical Analysis, Discrete Maths, Methods of Applied Math, Linear Algebra, Combinatorial Mathematics, Real Analysis, Algebraic Topology, Advanced Numerical Solution Partial Different Equation, Optimization}
+\end{tabular*}}
+
+\vspace{-2.5mm}
+\section{Positions of Responsibility}
+\vspace{-0.4mm}
+
+\resumeSubHeadingListStart
+\resumePOR{\textbf{Member, ACM}} % Position
+{Work done}{\raisebox{0.75pt}{2018 - 2020}}
+\vspace{0.5mm}
+\resumePOR{\textbf{President, SIAM}}
+{Work done}
+{\raisebox{0.75pt}{2018 - 2019}}
+\vspace{-1mm}
+\resumeSubHeadingListEnd
+\hspace*{-2mm}\rule{1.030\textwidth}{0.1mm}
+\vspace{0mm}
+
+%-------------------------------------------
+\end{document}
